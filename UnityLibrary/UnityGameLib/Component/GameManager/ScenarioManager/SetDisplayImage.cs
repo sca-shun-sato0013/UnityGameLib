@@ -4,7 +4,6 @@ using UnityEngine;
 using GameManager;
 using CommonlyUsed;
 using UnityEngine.UI;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class SetDisplayImage : MonoBehaviour,IUpdateManager
 {
@@ -32,8 +31,6 @@ public class SetDisplayImage : MonoBehaviour,IUpdateManager
     bool fadeCheck = false;
 
     string past  = "";
-
-    AsyncOperationHandle<Sprite> sprite;
     
     WaitForSeconds w2;
         
@@ -72,7 +69,7 @@ public class SetDisplayImage : MonoBehaviour,IUpdateManager
                     if (iDatas[i] != past)
                     {
                         charaAnimation.enabled = false;
-                        ImageLoading.ImageLoadingAsync(images[i], StringComponent.AddString(pathName, iDatas[i]),sprite);
+                        ImageLoading.ImageLoadingAsync(images[i], StringComponent.AddString(pathName, iDatas[i]));
                         past = iDatas[i];
                     }
                 }
