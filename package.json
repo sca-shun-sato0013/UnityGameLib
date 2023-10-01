@@ -1,0 +1,12 @@
+{
+  "name": "com.unity.unitygamelib",
+  "author": "shun",
+  "version": "0.0.1",
+  "displayName": "UnityGameLib",
+  "description": "Unity Library",
+  "unity": "2020.3",
+
+  "dependencies": {
+    "com.unity.addressables": "1.21.18"
+  }
+ }
