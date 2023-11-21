@@ -8,8 +8,7 @@
 
   "dependencies": {
     "com.unity.addressables": "1.21.19",
-    "com.unity.inputsystem": "1.6.3",
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#5cc97c7f0085624b6ef57853d70b404440060cef"
+    "com.unity.inputsystem": "1.6.3"
   }
 }
 
